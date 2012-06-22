@@ -1,0 +1,26 @@
+Pages 147 through 161 in the annotated slide deck cover py4j.
+
+I used py4j-0.7: http://pypi.python.org/pypi/py4j
+
+To build ScalaUtils.scala:
+scalac ScalaUtils.scala
+
+To build ScalaUtilsEntryPoint.scala (assuming its in the same directory as ScalaUtils.scala):
+scalac -cp .:/path/to/py4j-0.7.jar ScalaUtilsEntryPoint.scala
+
+To run ScalaUtilsEntryPoint.scala
+scala -cp .:/path/to/py4j-0.7.jar ScalaUtilsEntryPoint
+
+A sample Python console session:
+
+>>> from py4j.JavaGateway import JavaGateway
+>>>
+>>> entry_point = JavaGateway().entry_point
+>>>
+>>> scala_utils = entry_point.getScalaUtils()
+>>>
+>>> scala_utils.ageGroupMethod(21.0)
+2
+
+
+

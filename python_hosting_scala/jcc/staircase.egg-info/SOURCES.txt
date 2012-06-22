@@ -1,5 +1,0 @@
-staircase.egg-info/PKG-INFO
-staircase.egg-info/SOURCES.txt
-staircase.egg-info/dependency_links.txt
-staircase.egg-info/not-zip-safe
-staircase.egg-info/top_level.txt

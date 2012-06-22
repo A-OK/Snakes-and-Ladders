@@ -13,7 +13,7 @@ class PythonUtils() extends scala.Dynamic {
       case e: JepException => println(e.getMessage())
     }
 
-	def applyDynamic(name: String)(args: AnyRef*) = {
+	def applyDynamic[R](name: String)(args: Any*) = {
 	  val plist = new Array[String](args.length)
 	    for (i <- 0 until args.length) {
 	      plist(i) =
@@ -24,6 +24,6 @@ class PythonUtils() extends scala.Dynamic {
 	     }  
 	     
 	   val str = "python_utils." + name  + "(" + plist.reduceLeft[String](_ + ", " + _) + ")"
-	   jep.getValue(str)
+	   jep.getValue(str).asInstanceOf[R]
 	}
 }

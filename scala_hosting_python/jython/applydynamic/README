@@ -1,0 +1,18 @@
+Pages 48 through 58 in the annotated slide deck cover Scala hosting Jython.
+
+I used Jython 2.5.3b1: http://www.jython.org/downloads.html
+
+
+To compile PythonUtils.scala:
+
+scalac -Xexperimental -cp .:/path/to/jython.jar PythonUtils.scala 
+
+
+To compile PythonAge.scala:
+
+scalac -Xexperimental -cp .:/path/to/jython.jar PythonAge.scala
+
+
+To run PythonAge:
+
+scala -Xexperimental -cp .:/path/to/jython.jar applydynamic.PythonAge

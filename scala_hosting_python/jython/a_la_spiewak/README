@@ -1,0 +1,18 @@
+Pages 48 through 58 in the annotated slide deck cover Scala hosting Jython.
+
+I used Jython 2.5.3b1: http://www.jython.org/downloads.html
+
+
+To compile Scalathon.scala:
+
+scalac -cp .:/path/to/jython.jar Scalathon.scala 
+
+
+To compile PythonAge.scala:
+
+scalac -cp .:/path/to/jython.jar PythonAge.scala
+
+
+To run PythonAge:
+
+scala -cp .:/path/to/jython.jar a_la_spiewak.PythonAge

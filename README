@@ -1,0 +1,5 @@
+The file snakes_and_ladders.pdf contains a fully-annotated version of the slides for the session "Polyglot Programming with Python: Python/Scala Interop" presented at PyCon 2012.
+
+This project contains the source for all of the examples. The READMEs in each sub-directory contain details about how I ran the examples and the versions of the projects I used.
+
+I used Python 2.6.1 and Scala 2.9.1 on OS X 10.6.8. 

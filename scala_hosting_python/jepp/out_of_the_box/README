@@ -1,0 +1,15 @@
+Pages 8 through 58 in the annotated slide deck show how JEPP can help host Python from within a Scala program.
+
+I used jep 3.1: https://github.com/mrj0/jep
+
+
+To compile PythonAge.scala (you'll find jep.jar in /path/to/jep/build/java after installing jep via setup.py):
+
+scalac -cp .:/path/to/jep/build/java/jep.jar PythonAge.scala 
+
+
+To run PythonAge:
+
+scala -cp .:/path/to/jep/build/java/jep.jar jepp_out_of_the_box.PythonAge
+
+

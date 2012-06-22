@@ -1,5 +1,0 @@
-scala4py.egg-info/PKG-INFO
-scala4py.egg-info/SOURCES.txt
-scala4py.egg-info/dependency_links.txt
-scala4py.egg-info/not-zip-safe
-scala4py.egg-info/top_level.txt

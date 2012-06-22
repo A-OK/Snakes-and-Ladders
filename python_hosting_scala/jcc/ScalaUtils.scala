@@ -5,18 +5,12 @@ object ScalaUtils {
    reptileAgeFunction.andThen(ageGroupFunction)
  
  val ageGroupFunction = (age:Double) => {
-   if (age <= 19)
-     1
-   else if (age <= 30)
-     2
-   else if (age <= 45)
-     3
-   else if (age <= 60)
-     4
-   else if (age <= 75)
-     5
-   else
-     6
+  if (age <= 19)
+    1
+  else if (age <= 55)
+    2
+  else 
+    3
  }
 
  def ageGroupMethod(age:Double):Int = ageGroupFunction(age)      

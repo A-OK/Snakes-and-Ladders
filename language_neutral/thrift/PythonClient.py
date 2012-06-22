@@ -12,6 +12,7 @@ try:
 	
   transport = TSocket.TSocket('localhost', 1234)
   transport = TTransport.TBufferedTransport(transport)
+  transport.open()
   protocol = TBinaryProtocol.TBinaryProtocol(transport)
   client = ScalaUtilsService.Client(protocol)
   print client.ageGroupMethod(21) 
